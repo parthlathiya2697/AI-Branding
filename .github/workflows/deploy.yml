@@ -27,6 +27,6 @@ jobs:
           npm run build
           # Use pm2 to manage the application
           pm2 stop frontend || true  # Stop the existing process if it exists
-          pm2 start npm --name "frontend_ai_branding" -- run start -- -H 0.0.0.0 -p 6000
+          pm2 start npm --name "frontend_ai_branding" -- run start -- -H 0.0.0.0 -p 4100
           pm2 save  # Save the process list
           EOF
